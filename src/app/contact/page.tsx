@@ -62,12 +62,12 @@ const Page = () => {
 
           <label htmlFor="name" className="flex flex-col gap-2 md:gap-3">
             <p className="text-[16px] font-medium">Your Name</p>
-            <input type="text" name="name" id="name" placeholder="Fiza" className="md:px-4 px-2 py-2 md:py-5 rounded-xl border outline-none border-[#9F9F9F] " />
+            <input type="text" name="name" id="name" placeholder="Sohail" className="md:px-4 px-2 py-2 md:py-5 rounded-xl border outline-none border-[#9F9F9F] " />
           </label>
          
           <label htmlFor="email" className="flex flex-col gap-2 md:gap-3">
             <p className="text-[16px] font-medium">Email Address</p>
-            <input type="text" name="email" id="email" placeholder="fiza@gmail.com" className="md:px-4 px-2 py-2 md:py-5 rounded-xl border outline-none border-[#9F9F9F] " />
+            <input type="text" name="email" id="email" placeholder="Sohail@gmail.com" className="md:px-4 px-2 py-2 md:py-5 rounded-xl border outline-none border-[#9F9F9F] " />
           </label>
          
          <label htmlFor="Subject" className="flex flex-col gap-2 md:gap-3">
