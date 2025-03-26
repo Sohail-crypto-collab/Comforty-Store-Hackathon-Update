@@ -1,0 +1,732 @@
+"2/2/25, 9:37 PM about:blank"
+http://localhost:3000/dashboard
+80 95 78 100
+80 95 78 100
+Performance Accessibility Best SEO
+Practices
+SI FCP
+CLS 80 LCP
+TBT
+Performance
+Values are estimated and may vary. The performance score
+is calculated directly from these metrics.See calculator.
+0–49 50–89 90–100
+METRICS Expand view
+First Contentful Paint Largest Contentful Paint
+0.3 s 0.3 s
+Total Blocking Time Cumulative Layout Shift
+430 ms 0.022
+Speed Index
+1.2 s
+View Treemap
+about:blank 1/28
+"2/2/25, 9:37 PM about:blank"
+Show audits relevant to: All FCP LCP TBT CLS
+DIAGNOSTICS
+Reduce initial server response time  — Root document took 950 ms
+Keep the server response time for the main document short because all other requests depend on it. Learn more about the
+Time to First Byte metric. FCP LCP
+URL Time Spent
+localhost  1st Party 950 ms
+/dashboard (localhost) 950 ms
+Eliminate render-blocking resources  — Potential savings of 80 ms
+Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical
+JS/styles. Learn how to eliminate render-blocking resources. FCP LCP
+Transfer Potential
+URL
+Size Savings
+localhost  1st Party 4.4 KiB 110 ms
+…chunks/%5Broot%20of%20the%20server%5D__9d1267._.css (localhost) 4.4 KiB 110 ms
+Page prevented back/forward cache restoration  — 3 failure reasons
+"Many navigations are performed by going back to a previous page, or forwards again. The back/forward cache (bfcache)"
+can speed up these return navigations. Learn more about the bfcache
+about:blank 2/28
+"2/2/25, 9:37 PM about:blank"
+Failure reason Failure type
+Pending browser
+Pages with WebSocket cannot enter back/forward cache.
+support
+/dashboard (localhost)
+Pages whose main resource has cache-control:no-store cannot enter back/forward
+Not actionable
+cache.
+/dashboard (localhost)
+WebSocketSticky Not actionable
+/dashboard (localhost)
+Minify JavaScript  — Potential savings of 181 KiB
+Minifying JavaScript files can reduce payload sizes and script parse time. Learn how to minify JavaScript. FCP LCP
+Transfer Potential
+URL
+Size Savings
+localhost  1st Party 542.0 KiB 180.8 KiB
+…chunks/node_modules_next_dist_client_523921._.js (localhost) 147.5 KiB 50.3 KiB
+…chunks/node_modules_87fd41._.js (localhost) 129.0 KiB 42.8 KiB
+…chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js (localhost) 148.8 KiB 40.5 KiB
+…chunks/node_modules_next_dist_compiled_107ce8._.js (localhost) 55.5 KiB 22.2 KiB
+…chunks/_d95469._.js (localhost) 15.3 KiB 7.5 KiB
+…chunks/_236779._.js (localhost) 12.0 KiB 6.7 KiB
+…chunks/_22d2ba._.js (localhost) 17.2 KiB 6.5 KiB
+…chunks/node_modules_next_dist_4bb10e._.js (localhost) 16.5 KiB 4.3 KiB
+Avoid serving legacy JavaScript to modern browsers  — Potential savings of 0 KiB
+about:blank 3/28
+"2/2/25, 9:37 PM about:blank"
+"Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for"
+"modern browsers. For your bundled JavaScript, adopt a modern script deployment strategy using module/nomodule feature"
+"detection to reduce the amount of code shipped to modern browsers, while retaining support for legacy browsers. Learn how"
+to use modern JavaScript FCP LCP
+ Show 3rd-party resources (1)
+Potential
+URL
+Savings
+Ronin Wallet  Chrome Extension   0.2 KiB
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/ethers.D2 0.2 KiB
+hEfxEA.js
+@babel/plugin-
+ethers.D2hEfxEA.js:21
+transform-classes
+localhost  1st Party 0.1 KiB
+…
+0.0 KiB
+chunks/node_modules_next_dist_compiled_107ce8._.js (localhost)
+@babel/plugin-
+node_modules_next_di…ed_107ce8._.js:5229
+transform-classes
+…chunks/node_modules_next_dist_client_523921._.js (localhost) 0.0 KiB
+@babel/plugin-
+node_modules_next_di…nt_523921._.js:9122
+transform-classes
+"Reduce unused JavaScript  — Potential savings of 1,030 KiB"
+Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.
+Learn how to reduce unused JavaScript. FCP LCP
+ Show 3rd-party resources (3)
+Transfer Potential
+URL
+Size Savings
+"Ronin Wallet  Chrome Extension   1,314.4 KiB 810.3 KiB"
+chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/ethers.D2hEfxEA.js 829.8 KiB 570.1 KiB
+chrome- 413.8 KiB 189.0 KiB
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/foregroundCache.CFP9ZKOr.
+about:blank 4/28
+"2/2/25, 9:37 PM about:blank"
+Transfer Potential
+URL
+Size Savings
+js
+chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/lodash.BduLK7P_.js 70.8 KiB 51.2 KiB
+localhost  1st Party 480.9 KiB 219.4 KiB
+…chunks/node_modules_next_dist_client_523921._.js (localhost) 147.5 KiB 71.3 KiB
+…chunks/node_modules_87fd41._.js (localhost) 129.0 KiB 70.1 KiB
+…chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js (localhost) 148.8 KiB 51.6 KiB
+…chunks/node_modules_next_dist_compiled_107ce8._.js (localhost) 55.5 KiB 26.4 KiB
+JavaScript execution time  — 0.8 s
+"Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps"
+with this. Learn how to reduce Javascript execution time. TBT
+Total CPU Script Script
+URL
+Time Evaluation Parse
+Unattributable 672 ms 438 ms 0 ms
+Unattributable 672 ms 438 ms 0 ms
+localhost  1st Party 521 ms 312 ms 26 ms
+…
+212 ms 198 ms 6 ms
+chunks/node_modules_next_dist_compiled_107ce8._.js (localhost)
+/dashboard (localhost) 155 ms 23 ms 9 ms
+…chunks/node_modules_next_dist_compiled_react-
+154 ms 91 ms 12 ms
+dom_1f56dc._.js (localhost)
+Minimizes main-thread work  — 1.4 s
+"Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps"
+with this. Learn how to minimize main-thread work TBT
+about:blank 5/28
+"2/2/25, 9:37 PM about:blank"
+Category Time Spent
+Script Evaluation 789 ms
+Other 369 ms
+Script Parsing & Compilation 127 ms
+Style & Layout 35 ms
+Garbage Collection 25 ms
+Rendering 15 ms
+Parse HTML & CSS 9 ms
+Avoid long main-thread tasks  — 3 long tasks found
+"Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. Learn how to avoid long"
+main-thread tasks TBT
+URL Start Time Duration
+Unattributable 472 ms
+Unattributable 386 ms 472 ms
+localhost  1st Party 117 ms
+"…chunks/node_modules_next_dist_compiled_107ce8._.js (localhost) 1,317 ms 63 ms"
+/dashboard (localhost) 228 ms 54 ms
+Avoid large layout shifts  — 3 layout shifts found
+"These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the"
+element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout
+shifts may not be included in the CLS metric value due to windowing. Learn how to improve CLS CLS
+about:blank 6/28
+"2/2/25, 9:37 PM about:blank"
+Element Layout shift score
+0.022
+div.bg-gray-100.p-4.rounded.flex.items-center.gap-2
+…
+A late network request adjusted the page
+chunks/%5Broot%20of%20the%20server%5D__9d1267._.css (localho
+layout
+st)
+span
+0.015
+span
+0.005
+Avoids enormous network payloads  — Total size was 622 KiB
+Large network payloads cost users real money and are highly correlated with long load times. Learn how to reduce payload
+sizes.
+ Show 3rd-party resources (1)
+Transfer
+URL
+Size
+localhost  1st Party 570.5 KiB
+…chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js (localhost) 149.2 KiB
+…chunks/node_modules_next_dist_client_523921._.js (localhost) 147.9 KiB
+…chunks/node_modules_87fd41._.js (localhost) 129.4 KiB
+…chunks/node_modules_next_dist_compiled_107ce8._.js (localhost) 55.8 KiB
+/favicon.ico?favicon.45db1c09.ico (localhost) 25.6 KiB
+about:blank 7/28
+"2/2/25, 9:37 PM about:blank"
+Transfer
+URL
+Size
+…chunks/_22d2ba._.js (localhost) 17.6 KiB
+…chunks/node_modules_next_dist_4bb10e._.js (localhost) 16.9 KiB
+…chunks/_d95469._.js (localhost) 15.7 KiB
+…chunks/_236779._.js (localhost) 12.4 KiB
+sanity.io 13.7 KiB
+…query/production?query=… (57d0l3ov.apicdn.sanity.io) 13.7 KiB
+Avoids an excessive DOM size  — 513 elements
+"A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows. Learn how to"
+avoid an excessive DOM size. TBT
+Statistic Element Value
+Total DOM Elements 513
+Maximum DOM Depth button.text-xs.px-2.py-1.rounded.bg-gray-100.text-gray-600 11
+tbody.divide-y.divide-gray-200
+Maximum Child Elements 28
+Avoid chaining critical requests  — 1 chain found
+The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of
+"chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+Learn how to avoid chaining critical requests.
+"Maximum critical path latency: 1,181.425 ms"
+Initial Navigation
+/dashboard (localhost)
+about:blank 8/28
+"2/2/25, 9:37 PM about:blank"
+"…chunks/%5Broot%20of%20the%20server%5D__9d1267._.css (localhost) - 104.295 ms, 4.42 KiB"
+Minimize third-party usage  — Third-party code blocked the main thread for 0 ms
+Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to
+load third-party code after your page has primarily finished loading. Learn how to minimize third-party impact. TBT
+Transfer Main-Thread
+Third-Party
+Size Blocking Time
+"Ronin Wallet  Chrome Extension   1,325 KiB 0 ms"
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/ethers.D2hEfxEA. 830 KiB 0 ms
+js
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/foregroundCache. 420 KiB 0 ms
+CFP9ZKOr.js
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/lodash.BduLK7P_. 71 KiB 0 ms
+js
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/index.CpHa- 2 KiB 0 ms
+BoQ.js
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/index.umd.bNrpW4 1 KiB 0 ms
+vQ.js
+chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/assets/js/index.DkvvEwj1.j 0 KiB 0 ms
+s
+sanity.io 17 KiB 0 ms
+…query/production?query=… (57d0l3ov.apicdn.sanity.io) 14 KiB 0 ms
+…query/production?query=… (57d0l3ov.apicdn.sanity.io) 3 KiB 0 ms
+Largest Contentful Paint element  — 340 ms
+This is the largest contentful element painted within the viewport. Learn more about the Largest Contentful Paint element
+LCP
+Element
+h1.text-2xl.font-bold.text-gray-900
+about:blank 9/28
+"2/2/25, 9:37 PM about:blank"
+Element
+Phase % of LCP Timing
+TTFB 284% 950 ms
+Load Delay 0% 0 ms
+Load Time 0% 0 ms
+Render Delay -184% -620 ms
+More information about the performance of your application. These numbers don't directly affect the Performance score.
+PASSED AUDITS (23) Hide
+Properly size images
+Serve images that are appropriately-sized to save cellular data and improve load time. Learn how to size images. FCP
+LCP
+Defer offscreen images
+Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to
+interactive. Learn how to defer offscreen images. FCP LCP
+Minify CSS
+Minifying CSS files can reduce network payload sizes. Learn how to minify CSS. FCP LCP
+Reduce unused CSS
+Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by
+network activity. Learn how to reduce unused CSS. FCP LCP
+Efficiently encode images
+about:blank 10/28
+"2/2/25, 9:37 PM about:blank"
+Optimized images load faster and consume less cellular data. Learn how to efficiently encode images. FCP LCP
+Serve images in next-gen formats
+"Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads"
+and less data consumption. Learn more about modern image formats. FCP LCP
+Enable text compression
+"Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. Learn"
+more about text compression. FCP LCP
+Preconnect to required origins
+Consider adding preconnect or dns-prefetch resource hints to establish early connections to important third-party origins.
+Learn how to preconnect to required origins. LCP FCP
+Avoid multiple page redirects
+Redirects introduce additional delays before the page can be loaded. Learn how to avoid page redirects. LCP FCP
+Use HTTP/2
+"HTTP/2 offers many benefits over HTTP/1.1, including binary headers and multiplexing. Learn more about HTTP/2. LCP"
+FCP
+Use video formats for animated content
+Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and
+PNG/WebP for static images instead of GIF to save network bytes. Learn more about efficient video formats FCP LCP
+Remove duplicate modules in JavaScript bundles
+"Remove large, duplicate JavaScript modules from bundles to reduce unnecessary bytes consumed by network activity."
+FCP LCP
+Preload Largest Contentful Paint image
+"If the LCP element is dynamically added to the page, you should preload the image in order to improve LCP. Learn more"
+about preloading LCP elements. LCP
+Uses efficient cache policy on static assets  — 0 resources found
+about:blank 11/28
+"2/2/25, 9:37 PM about:blank"
+A long cache lifetime can speed up repeat visits to your page. Learn more about efficient cache policies.
+User Timing marks and measures
+Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user
+experiences. Learn more about User Timing marks.
+All text remains visible during webfont loads
+Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. Learn more about font-
+display.
+Lazy load third-party resources with facades
+Some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required. Learn how to
+defer third-parties with a facade. TBT
+Largest Contentful Paint image was not lazily loaded
+"Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint."
+Learn more about optimal lazy loading. LCP
+Uses passive listeners to improve scrolling performance
+Consider marking your touch and wheel event listeners as passive to improve your page's scroll performance. Learn more
+about adopting passive event listeners.
+Avoids document.write()
+"For users on slow connections, external scripts dynamically injected via document.write() can delay page load by tens of"
+seconds. Learn how to avoid document.write().
+Avoid non-composited animations
+Animations which are not composited can be janky and increase CLS. Learn how to avoid non-composited animations CLS
+Image elements have explicit width and height
+Set an explicit width and height on image elements to reduce layout shifts and improve CLS. Learn how to set image
+dimensions CLS
+about:blank 12/28
+"2/2/25, 9:37 PM about:blank"
+"Has a <meta name=""viewport""> tag with width or initial-scale"
+"A <meta name=""viewport""> not only optimizes your app for mobile screen sizes, but also prevents a 300 millisecond delay"
+to user input. Learn more about using the viewport meta tag.
+95
+Accessibility
+These checks highlight opportunities to improve the accessibility of your
+web app. Automatic detection can only detect a subset of issues and does
+"not guarantee the accessibility of your web app, so manual testing is also"
+encouraged.
+CONTRAST
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+button.px-4.py-2.bg-red-500.text-white.rounded-lg.hover:bg-red-600.transition-colors
+button.px-4.py-2.rounded-full.capitalize.bg-blue-500.text-white
+These are opportunities to improve the legibility of your content.
+ADDITIONAL ITEMS TO MANUALLY CHECK (10) Hide
+Interactive controls are keyboard focusable
+about:blank 13/28
+"2/2/25, 9:37 PM about:blank"
+Custom interactive controls are keyboard focusable and display a focus indicator. Learn how to make custom controls
+focusable.
+Interactive elements indicate their purpose and state
+"Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive"
+elements. Learn how to decorate interactive elements with affordance hints.
+The page has a logical tab order
+Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. Learn more about
+logical tab ordering.
+Visual order on the page follows DOM order
+"DOM order matches the visual order, improving navigation for assistive technology. Learn more about DOM and visual"
+ordering.
+User focus is not accidentally trapped in a region
+A user can tab into and out of any control or region without accidentally trapping their focus. Learn how to avoid focus traps.
+The user's focus is directed to new content added to the page
+"If new content, such as a dialog, is added to the page, the user's focus is directed to it. Learn how to direct focus to new"
+content.
+HTML5 landmark elements are used to improve navigation
+"Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology."
+Learn more about landmark elements.
+Offscreen content is hidden from assistive technology
+Offscreen content is hidden with display: none or aria-hidden=true. Learn how to properly hide offscreen content.
+Custom controls have associated labels
+"Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. Learn more about custom"
+controls and labels.
+Custom controls have ARIA roles
+about:blank 14/28
+"2/2/25, 9:37 PM about:blank"
+Custom interactive controls have appropriate ARIA roles. Learn how to add roles to custom controls.
+These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an accessibility
+review.
+PASSED AUDITS (21) Hide
+[aria-*] attributes match their roles
+Each ARIA role supports a specific subset of aria-* attributes. Mismatching these invalidates the aria-* attributes. Learn
+how to match ARIA attributes to their roles.
+"[aria-hidden=""true""] is not present on the document <body>"
+"Assistive technologies, like screen readers, work inconsistently when aria-hidden=""true"" is set on the document <body>."
+Learn how aria-hidden affects the document body.
+[role]s have all required [aria-*] attributes
+Some ARIA roles have required attributes that describe the state of the element to screen readers. Learn more about roles
+and required attributes.
+[aria-*] attributes have valid values
+"Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. Learn more about valid values"
+for ARIA attributes.
+[aria-*] attributes are valid and not misspelled
+"Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. Learn more about valid ARIA"
+attributes.
+Buttons have an accessible name
+"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who"
+rely on screen readers. Learn how to make buttons more accessible.
+Image elements have [alt] attributes
+"Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt"
+attribute. Learn more about the alt attribute.
+about:blank 15/28
+"2/2/25, 9:37 PM about:blank"
+"[user-scalable=""no""] is not used in the <meta name=""viewport""> element and the [maximum-scale] attribute is not less"
+than 5.
+Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a
+web page. Learn more about the viewport meta tag.
+ARIA attributes are used as specified for the element's role
+Some ARIA attributes are only allowed on an element under certain conditions. Learn more about conditional ARIA
+attributes.
+Elements use only permitted ARIA attributes
+Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users
+of assistive technologies. Learn more about prohibited ARIA roles.
+[role] values are valid
+ARIA roles must have valid values in order to perform their intended accessibility functions. Learn more about valid ARIA
+roles.
+Document has a <title> element
+"The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a"
+page is relevant to their search. Learn more about document titles.
+<html> element has a [lang] attribute
+"If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user"
+"chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not"
+announce the page's text correctly. Learn more about the lang attribute.
+<html> element has a valid value for its [lang] attribute
+Specifying a valid BCP 47 language helps screen readers announce text properly. Learn how to use the lang attribute.
+Touch targets have sufficient size and spacing.
+Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the
+targets. Learn more about touch targets.
+Cells in a <table> element that use the [headers] attribute refer to table cells within the same table.
+about:blank 16/28
+"2/2/25, 9:37 PM about:blank"
+Screen readers have features to make navigating tables easier. Ensuring <td> cells using the [headers] attribute only refer
+to other cells in the same table may improve the experience for screen reader users. Learn more about the headers
+attribute.
+Heading elements appear in a sequentially-descending order
+"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate"
+and understand when using assistive technologies. Learn more about heading order.
+Uses ARIA roles only on compatible elements
+Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere
+with the accessibility of the web page. Learn more about ARIA roles.
+Deprecated ARIA roles were not used
+Deprecated ARIA roles may not be processed correctly by assistive technology. Learn more about deprecated ARIA roles.
+Image elements do not have [alt] attributes that are redundant text.
+"Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text"
+"adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. Learn more"
+about the alt attribute.
+Tables have different content in the summary attribute and <caption>.
+"The summary attribute should describe the table structure, while <caption> should have the onscreen title. Accurate table"
+mark-up helps users of screen readers. Learn more about summary and caption.
+NOT APPLICABLE (35) Hide
+[accesskey] values are unique
+"Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. Learn more"
+about access keys.
+"button, link, and menuitem elements have accessible names"
+"When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable"
+for users who rely on screen readers. Learn how to make command elements more accessible.
+about:blank 17/28
+"2/2/25, 9:37 PM about:blank"
+"Elements with role=""dialog"" or role=""alertdialog"" have accessible names."
+ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these
+elements. Learn how to make ARIA dialog elements more accessible.
+"[aria-hidden=""true""] elements do not contain focusable descendents"
+"Focusable descendents within an [aria-hidden=""true""] element prevent those interactive elements from being available"
+to users of assistive technologies like screen readers. Learn how aria-hidden affects focusable elements.
+ARIA input fields have accessible names
+"When an input field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable"
+for users who rely on screen readers. Learn more about input field labels.
+ARIA meter elements have accessible names
+"When a meter element doesn't have an accessible name, screen readers announce it with a generic name, making it"
+unusable for users who rely on screen readers. Learn how to name meter elements.
+ARIA progressbar elements have accessible names
+"When a progressbar element doesn't have an accessible name, screen readers announce it with a generic name, making"
+it unusable for users who rely on screen readers. Learn how to label progressbar elements.
+Elements with an ARIA [role] that require children to contain a specific [role] have all required children.
+Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. Learn more about
+roles and required children elements.
+[role]s are contained by their required parent element
+Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions.
+Learn more about ARIA roles and required parent element.
+Elements with the role=text attribute do not have focusable descendents.
+"Adding role=text around a text node split by markup enables VoiceOver to treat it as one phrase, but the element's"
+focusable descendents will not be announced. Learn more about the role=text attribute.
+ARIA toggle fields have accessible names
+about:blank 18/28
+"2/2/25, 9:37 PM about:blank"
+"When a toggle field doesn't have an accessible name, screen readers announce it with a generic name, making it unusable"
+for users who rely on screen readers. Learn more about toggle fields.
+ARIA tooltip elements have accessible names
+"When a tooltip element doesn't have an accessible name, screen readers announce it with a generic name, making it"
+unusable for users who rely on screen readers. Learn how to name tooltip elements.
+ARIA treeitem elements have accessible names
+"When a treeitem element doesn't have an accessible name, screen readers announce it with a generic name, making it"
+unusable for users who rely on screen readers. Learn more about labeling treeitem elements.
+"The page contains a heading, skip link, or landmark region"
+Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. Learn more about bypass
+blocks.
+"<dl>'s contain only properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements."
+"When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. Learn how to"
+structure definition lists correctly.
+Definition list items are wrapped in <dl> elements
+Definition list items (<dt> and <dd>) must be wrapped in a parent <dl> element to ensure that screen readers can properly
+announce them. Learn how to structure definition lists correctly.
+ARIA IDs are unique
+The value of an ARIA ID must be unique to prevent other instances from being overlooked by assistive technologies. Learn
+how to fix duplicate ARIA IDs.
+No form fields have multiple labels
+Form fields with multiple labels can be confusingly announced by assistive technologies like screen readers which use either
+"the first, the last, or all of the labels. Learn how to use form labels."
+<frame> or <iframe> elements have a title
+Screen reader users rely on frame titles to describe the contents of frames. Learn more about frame titles.
+about:blank 19/28
+"2/2/25, 9:37 PM about:blank"
+<html> element has an [xml:lang] attribute with the same base language as the [lang] attribute.
+"If the webpage does not specify a consistent language, then the screen reader might not announce the page's text correctly."
+Learn more about the lang attribute.
+Input buttons have discernible text.
+Adding discernable and accessible text to input buttons may help screen reader users understand the purpose of the input
+button. Learn more about input buttons.
+"<input type=""image""> elements have [alt] text"
+"When an image is being used as an <input> button, providing alternative text can help screen reader users understand the"
+purpose of the button. Learn about input image alt text.
+Form elements have associated labels
+"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. Learn more about"
+form element labels.
+Links are distinguishable without relying on color.
+Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for
+users with low vision. Learn how to make links distinguishable.
+Links have a discernible name
+"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the"
+navigation experience for screen reader users. Learn how to make links accessible.
+Lists contain only <li> elements and script supporting elements (<script> and <template>).
+Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. Learn more
+about proper list structure.
+"List items (<li>) are contained within <ul>, <ol> or <menu> parent elements"
+"Screen readers require list items (<li>) to be contained within a parent <ul>, <ol> or <menu> to be announced properly."
+Learn more about proper list structure.
+"The document does not use <meta http-equiv=""refresh"">"
+about:blank 20/28
+"2/2/25, 9:37 PM about:blank"
+"Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may"
+create a frustrating or confusing experience. Learn more about the refresh meta tag.
+<object> elements have alternate text
+Screen readers cannot translate non-text content. Adding alternate text to <object> elements helps screen readers convey
+meaning to users. Learn more about alt text for object elements.
+Select elements have associated label elements.
+Form elements without effective labels can create frustrating experiences for screen reader users. Learn more about the
+select element.
+Skip links are focusable.
+Including a skip link can help users skip to the main content to save time. Learn more about skip links.
+No element has a [tabindex] value greater than 0
+"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating"
+experiences for users who rely on assistive technologies. Learn more about the tabindex attribute.
+"<th> elements and elements with [role=""columnheader""/""rowheader""] have data cells they describe."
+Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells
+may improve the experience for screen reader users. Learn more about table headers.
+[lang] attributes have a valid value
+Specifying a valid BCP 47 language on elements helps ensure that text is pronounced correctly by a screen reader. Learn
+how to use the lang attribute.
+"<video> elements contain a <track> element with [kind=""captions""]"
+When a video provides a caption it is easier for deaf and hearing impaired users to access its information. Learn more about
+video captions.
+78
+about:blank 21/28
+"2/2/25, 9:37 PM about:blank"
+Best Practices
+GENERAL
+Uses third-party cookies  — 1 cookie found
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. Learn more
+about third-party cookies.
+Name URL
+sanity.io
+sanitySession …query/production?query=… (57d0l3ov.apicdn.sanity.io)
+Issues were logged in the Issues panel in Chrome Devtools
+Issues logged to the Issues panel in Chrome Devtools indicate unresolved problems. They can come from network request
+"failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more"
+details on each issue.
+Issue type
+Cookie
+…query/production?query=… (57d0l3ov.apicdn.sanity.io)
+…query/production?query=… (57d0l3ov.apicdn.sanity.io)
+Missing source maps for large first-party JavaScript
+"Source maps translate minified code to the original source code. This helps developers debug in production. In addition,"
+Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. Learn
+more about source maps.
+ Show 3rd-party resources (1)
+URL Map URL
+localhost  1st Party
+…chunks/node_modules_next_dist_compiled_react- …chunks/node_modules_next_dist_compiled_react-
+dom_1f56dc._.js (localhost) dom_1f56dc._.….map (localhost)
+about:blank 22/28
+"2/2/25, 9:37 PM about:blank"
+URL Map URL
+Large JavaScript file is missing a source map
+Error: Map has no `mappings` field
+… …
+chunks/node_modules_next_dist_client_523921._.js (l chunks/node_modules_next_dist_client_523921._.js.map
+ocalhost) (localhost)
+Large JavaScript file is missing a source map
+Error: Map has no `mappings` field
+…chunks/node_modules_87fd41._.js (localhost) …chunks/node_modules_87fd41._.js.map (localhost)
+Large JavaScript file is missing a source map
+Error: Map has no `mappings` field
+… …
+chunks/node_modules_next_dist_compiled_107ce8._.j chunks/node_modules_next_dist_compiled_107ce8._.js.
+s (localhost) map (localhost)
+Error: Map has no `mappings` field
+… …
+chunks/node_modules_next_dist_4bb10e._.js (localhos chunks/node_modules_next_dist_4bb10e._.js.map (localh
+t) ost)
+Error: Map has no `mappings` field
+… …
+chunks/node_modules_%40swc_helpers_cjs_00636a. chunks/node_modules_%40swc_helpers_cjs_00636a._.js
+_.js (localhost) .map (localhost)
+Error: Map has no `mappings` field
+…chunks/%5Bturbopack%5D_browser_dev_hmr- …chunks/%5Bturbopack%5D_browser_dev_hmr-
+client_d6d8d4._.js (localhost) client_d6d8d4._.js.map (localhost)
+Error: Map has no `mappings` field
+…chunks/_d95469._.js (localhost) …chunks/_d95469._.js.map (localhost)
+Error: Map has no `mappings` field
+…chunks/_236779._.js (localhost) …chunks/_236779._.js.map (localhost)
+Error: Map has no `mappings` field
+…chunks/_22d2ba._.js (localhost) …chunks/_22d2ba._.js.map (localhost)
+Error: Map has no `mappings` field
+about:blank 23/28
+"2/2/25, 9:37 PM about:blank"
+URL Map URL
+Ronin Wallet  Chrome Extension  
+chrome- chrome-
+extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in- extension://fnjhmkhhmkbjkkabndcnnogagogbneec/extension.
+page.js umd.js.map
+Error: Failed fetching source map (null)
+TRUST AND SAFETY
+Ensure CSP is effective against XSS attacks
+A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. Learn how to use
+a CSP to prevent XSS
+Description Directive Severity
+No CSP found in enforcement mode High
+PASSED AUDITS (11) Hide
+Uses HTTPS
+"All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding mixed content,"
+where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents
+"intruders from tampering with or passively listening in on the communications between your app and your users, and is a"
+prerequisite for HTTP/2 and many new web platform APIs. Learn more about HTTPS.
+Avoids deprecated APIs
+Deprecated APIs will eventually be removed from the browser. Learn more about deprecated APIs.
+Allows users to paste into input fields
+"Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.Learn more"
+about user-friendly input fields.
+Avoids requesting the geolocation permission on page load
+about:blank 24/28
+"2/2/25, 9:37 PM about:blank"
+Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user
+action instead. Learn more about the geolocation permission.
+Avoids requesting the notification permission on page load
+Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to
+user gestures instead. Learn more about responsibly getting permission for notifications.
+Displays images with correct aspect ratio
+Image display dimensions should match natural aspect ratio. Learn more about image aspect ratio.
+Serves images with appropriate resolution
+Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. Learn how
+to provide responsive images.
+"Has a <meta name=""viewport""> tag with width or initial-scale"
+"A <meta name=""viewport""> not only optimizes your app for mobile screen sizes, but also prevents a 300 millisecond delay"
+to user input. Learn more about using the viewport meta tag.
+Page has the HTML doctype
+Specifying a doctype prevents the browser from switching to quirks-mode. Learn more about the doctype declaration.
+Properly defines charset
+A character encoding declaration is required. It can be done with a <meta> tag in the first 1024 bytes of the HTML or in the
+Content-Type HTTP response header. Learn more about declaring the character encoding.
+No browser errors logged to the console
+Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser
+concerns. Learn more about this errors in console diagnostic audit
+NOT APPLICABLE (3) Hide
+Redirects HTTP traffic to HTTPS
+Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. Learn more.
+about:blank 25/28
+"2/2/25, 9:37 PM about:blank"
+Document uses legible font sizes
+Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to
+have >60% of page text ≥12px. Learn more about legible font sizes.
+Detected JavaScript libraries
+All front-end JavaScript libraries detected on the page. Learn more about this JavaScript library detection diagnostic audit.
+100
+SEO
+These checks ensure that your page is following basic search engine
+optimization advice. There are many additional factors Lighthouse does not
+"score here that may affect your search ranking, including performance on"
+Core Web Vitals. Learn more about Google Search Essentials.
+ADDITIONAL ITEMS TO MANUALLY CHECK (1) Hide
+Structured data is valid
+Run the Structured Data Testing Tool and the Structured Data Linter to validate structured data. Learn more about
+Structured Data.
+Run these additional validators on your site to check additional SEO best practices.
+PASSED AUDITS (8) Hide
+Page isn’t blocked from indexing
+Search engines are unable to include your pages in search results if they don't have permission to crawl them. Learn more
+about crawler directives.
+Document has a <title> element
+"The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a"
+page is relevant to their search. Learn more about document titles.
+about:blank 26/28
+"2/2/25, 9:37 PM about:blank"
+Document has a meta description
+Meta descriptions may be included in search results to concisely summarize page content. Learn more about the meta
+description.
+Page has successful HTTP status code
+Pages with unsuccessful HTTP status codes may not be indexed properly. Learn more about HTTP status codes.
+Links have descriptive text
+Descriptive link text helps search engines understand your content. Learn how to make links more accessible.
+Links are crawlable
+Search engines may use href attributes on links to crawl websites. Ensure that the href attribute of anchor elements links
+"to an appropriate destination, so more pages of the site can be discovered. Learn how to make links crawlable"
+Image elements have [alt] attributes
+"Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt"
+attribute. Learn more about the alt attribute.
+Document has a valid hreflang
+hreflang links tell search engines what version of a page they should list in search results for a given language or region.
+Learn more about hreflang.
+NOT APPLICABLE (2) Hide
+robots.txt is valid
+"If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or"
+indexed. Learn more about robots.txt.
+Document has a valid rel=canonical
+Canonical links suggest which URL to show in search results. Learn more about canonical links.
+about:blank 27/28
+"2/2/25, 9:37 PM about:blank"
+"Captured at Feb 2, 2025, 9:30 Emulated Desktop with Single page session"
+PM GMT+5 Lighthouse 12.2.1
+Initial page load Custom throttling Using Chromium 132.0.0.0 with
+devtools
+Generated by Lighthouse 12.2.1 | File an issue
+about:blank 28/28

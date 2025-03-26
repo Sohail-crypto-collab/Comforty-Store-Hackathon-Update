@@ -1,0 +1,3 @@
+
+	"message": "Type '{ params: { category: string; }; }' does not satisfy the constraint 'PageProps'.\n  Types of property 'params' are incompatible.\n    Type '{ category: string; }' is missing the following properties from type 'Promise<any>': then, catch, finally, [Symbol.toStringTag]",
+	
